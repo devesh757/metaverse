@@ -149,6 +149,7 @@ exports.Prisma.ElementScalarFieldEnum = {
   id: 'id',
   width: 'width',
   height: 'height',
+  static: 'static',
   imageUrl: 'imageUrl'
 };
 
@@ -156,7 +157,8 @@ exports.Prisma.MapScalarFieldEnum = {
   id: 'id',
   width: 'width',
   height: 'height',
-  name: 'name'
+  name: 'name',
+  thumbnail: 'thumbnail'
 };
 
 exports.Prisma.MapElementsScalarFieldEnum = {

@@ -5011,6 +5011,7 @@ export namespace Prisma {
     id: string | null
     width: number | null
     height: number | null
+    static: boolean | null
     imageUrl: string | null
   }
 
@@ -5018,6 +5019,7 @@ export namespace Prisma {
     id: string | null
     width: number | null
     height: number | null
+    static: boolean | null
     imageUrl: string | null
   }
 
@@ -5025,6 +5027,7 @@ export namespace Prisma {
     id: number
     width: number
     height: number
+    static: number
     imageUrl: number
     _all: number
   }
@@ -5044,6 +5047,7 @@ export namespace Prisma {
     id?: true
     width?: true
     height?: true
+    static?: true
     imageUrl?: true
   }
 
@@ -5051,6 +5055,7 @@ export namespace Prisma {
     id?: true
     width?: true
     height?: true
+    static?: true
     imageUrl?: true
   }
 
@@ -5058,6 +5063,7 @@ export namespace Prisma {
     id?: true
     width?: true
     height?: true
+    static?: true
     imageUrl?: true
     _all?: true
   }
@@ -5152,6 +5158,7 @@ export namespace Prisma {
     id: string
     width: number
     height: number
+    static: boolean
     imageUrl: string
     _count: ElementCountAggregateOutputType | null
     _avg: ElementAvgAggregateOutputType | null
@@ -5178,6 +5185,7 @@ export namespace Prisma {
     id?: boolean
     width?: boolean
     height?: boolean
+    static?: boolean
     imageUrl?: boolean
     spaces?: boolean | Element$spacesArgs<ExtArgs>
     mapElements?: boolean | Element$mapElementsArgs<ExtArgs>
@@ -5188,6 +5196,7 @@ export namespace Prisma {
     id?: boolean
     width?: boolean
     height?: boolean
+    static?: boolean
     imageUrl?: boolean
   }, ExtArgs["result"]["element"]>
 
@@ -5195,6 +5204,7 @@ export namespace Prisma {
     id?: boolean
     width?: boolean
     height?: boolean
+    static?: boolean
     imageUrl?: boolean
   }, ExtArgs["result"]["element"]>
 
@@ -5202,10 +5212,11 @@ export namespace Prisma {
     id?: boolean
     width?: boolean
     height?: boolean
+    static?: boolean
     imageUrl?: boolean
   }
 
-  export type ElementOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "width" | "height" | "imageUrl", ExtArgs["result"]["element"]>
+  export type ElementOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "width" | "height" | "static" | "imageUrl", ExtArgs["result"]["element"]>
   export type ElementInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     spaces?: boolean | Element$spacesArgs<ExtArgs>
     mapElements?: boolean | Element$mapElementsArgs<ExtArgs>
@@ -5224,6 +5235,7 @@ export namespace Prisma {
       id: string
       width: number
       height: number
+      static: boolean
       imageUrl: string
     }, ExtArgs["result"]["element"]>
     composites: {}
@@ -5653,6 +5665,7 @@ export namespace Prisma {
     readonly id: FieldRef<"Element", 'String'>
     readonly width: FieldRef<"Element", 'Int'>
     readonly height: FieldRef<"Element", 'Int'>
+    readonly static: FieldRef<"Element", 'Boolean'>
     readonly imageUrl: FieldRef<"Element", 'String'>
   }
     
@@ -6140,6 +6153,7 @@ export namespace Prisma {
     width: number | null
     height: number | null
     name: string | null
+    thumbnail: string | null
   }
 
   export type MapMaxAggregateOutputType = {
@@ -6147,6 +6161,7 @@ export namespace Prisma {
     width: number | null
     height: number | null
     name: string | null
+    thumbnail: string | null
   }
 
   export type MapCountAggregateOutputType = {
@@ -6154,6 +6169,7 @@ export namespace Prisma {
     width: number
     height: number
     name: number
+    thumbnail: number
     _all: number
   }
 
@@ -6173,6 +6189,7 @@ export namespace Prisma {
     width?: true
     height?: true
     name?: true
+    thumbnail?: true
   }
 
   export type MapMaxAggregateInputType = {
@@ -6180,6 +6197,7 @@ export namespace Prisma {
     width?: true
     height?: true
     name?: true
+    thumbnail?: true
   }
 
   export type MapCountAggregateInputType = {
@@ -6187,6 +6205,7 @@ export namespace Prisma {
     width?: true
     height?: true
     name?: true
+    thumbnail?: true
     _all?: true
   }
 
@@ -6281,6 +6300,7 @@ export namespace Prisma {
     width: number
     height: number
     name: string
+    thumbnail: string
     _count: MapCountAggregateOutputType | null
     _avg: MapAvgAggregateOutputType | null
     _sum: MapSumAggregateOutputType | null
@@ -6307,6 +6327,7 @@ export namespace Prisma {
     width?: boolean
     height?: boolean
     name?: boolean
+    thumbnail?: boolean
     mapElements?: boolean | Map$mapElementsArgs<ExtArgs>
     _count?: boolean | MapCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["map"]>
@@ -6316,6 +6337,7 @@ export namespace Prisma {
     width?: boolean
     height?: boolean
     name?: boolean
+    thumbnail?: boolean
   }, ExtArgs["result"]["map"]>
 
   export type MapSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
@@ -6323,6 +6345,7 @@ export namespace Prisma {
     width?: boolean
     height?: boolean
     name?: boolean
+    thumbnail?: boolean
   }, ExtArgs["result"]["map"]>
 
   export type MapSelectScalar = {
@@ -6330,9 +6353,10 @@ export namespace Prisma {
     width?: boolean
     height?: boolean
     name?: boolean
+    thumbnail?: boolean
   }
 
-  export type MapOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "width" | "height" | "name", ExtArgs["result"]["map"]>
+  export type MapOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "width" | "height" | "name" | "thumbnail", ExtArgs["result"]["map"]>
   export type MapInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     mapElements?: boolean | Map$mapElementsArgs<ExtArgs>
     _count?: boolean | MapCountOutputTypeDefaultArgs<ExtArgs>
@@ -6350,6 +6374,7 @@ export namespace Prisma {
       width: number
       height: number
       name: string
+      thumbnail: string
     }, ExtArgs["result"]["map"]>
     composites: {}
   }
@@ -6778,6 +6803,7 @@ export namespace Prisma {
     readonly width: FieldRef<"Map", 'Int'>
     readonly height: FieldRef<"Map", 'Int'>
     readonly name: FieldRef<"Map", 'String'>
+    readonly thumbnail: FieldRef<"Map", 'String'>
   }
     
 
@@ -9423,6 +9449,7 @@ export namespace Prisma {
     id: 'id',
     width: 'width',
     height: 'height',
+    static: 'static',
     imageUrl: 'imageUrl'
   };
 
@@ -9433,7 +9460,8 @@ export namespace Prisma {
     id: 'id',
     width: 'width',
     height: 'height',
-    name: 'name'
+    name: 'name',
+    thumbnail: 'thumbnail'
   };
 
   export type MapScalarFieldEnum = (typeof MapScalarFieldEnum)[keyof typeof MapScalarFieldEnum]
@@ -9527,6 +9555,13 @@ export namespace Prisma {
    * Reference to a field of type 'Int[]'
    */
   export type ListIntFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Int[]'>
+    
+
+
+  /**
+   * Reference to a field of type 'Boolean'
+   */
+  export type BooleanFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Boolean'>
     
 
 
@@ -9737,6 +9772,7 @@ export namespace Prisma {
     id?: StringFilter<"Element"> | string
     width?: IntFilter<"Element"> | number
     height?: IntFilter<"Element"> | number
+    static?: BoolFilter<"Element"> | boolean
     imageUrl?: StringFilter<"Element"> | string
     spaces?: SpaceElementsListRelationFilter
     mapElements?: MapElementsListRelationFilter
@@ -9746,6 +9782,7 @@ export namespace Prisma {
     id?: SortOrder
     width?: SortOrder
     height?: SortOrder
+    static?: SortOrder
     imageUrl?: SortOrder
     spaces?: SpaceElementsOrderByRelationAggregateInput
     mapElements?: MapElementsOrderByRelationAggregateInput
@@ -9758,6 +9795,7 @@ export namespace Prisma {
     NOT?: ElementWhereInput | ElementWhereInput[]
     width?: IntFilter<"Element"> | number
     height?: IntFilter<"Element"> | number
+    static?: BoolFilter<"Element"> | boolean
     imageUrl?: StringFilter<"Element"> | string
     spaces?: SpaceElementsListRelationFilter
     mapElements?: MapElementsListRelationFilter
@@ -9767,6 +9805,7 @@ export namespace Prisma {
     id?: SortOrder
     width?: SortOrder
     height?: SortOrder
+    static?: SortOrder
     imageUrl?: SortOrder
     _count?: ElementCountOrderByAggregateInput
     _avg?: ElementAvgOrderByAggregateInput
@@ -9782,6 +9821,7 @@ export namespace Prisma {
     id?: StringWithAggregatesFilter<"Element"> | string
     width?: IntWithAggregatesFilter<"Element"> | number
     height?: IntWithAggregatesFilter<"Element"> | number
+    static?: BoolWithAggregatesFilter<"Element"> | boolean
     imageUrl?: StringWithAggregatesFilter<"Element"> | string
   }
 
@@ -9793,6 +9833,7 @@ export namespace Prisma {
     width?: IntFilter<"Map"> | number
     height?: IntFilter<"Map"> | number
     name?: StringFilter<"Map"> | string
+    thumbnail?: StringFilter<"Map"> | string
     mapElements?: MapElementsListRelationFilter
   }
 
@@ -9801,6 +9842,7 @@ export namespace Prisma {
     width?: SortOrder
     height?: SortOrder
     name?: SortOrder
+    thumbnail?: SortOrder
     mapElements?: MapElementsOrderByRelationAggregateInput
   }
 
@@ -9812,6 +9854,7 @@ export namespace Prisma {
     width?: IntFilter<"Map"> | number
     height?: IntFilter<"Map"> | number
     name?: StringFilter<"Map"> | string
+    thumbnail?: StringFilter<"Map"> | string
     mapElements?: MapElementsListRelationFilter
   }, "id" | "id">
 
@@ -9820,6 +9863,7 @@ export namespace Prisma {
     width?: SortOrder
     height?: SortOrder
     name?: SortOrder
+    thumbnail?: SortOrder
     _count?: MapCountOrderByAggregateInput
     _avg?: MapAvgOrderByAggregateInput
     _max?: MapMaxOrderByAggregateInput
@@ -9835,6 +9879,7 @@ export namespace Prisma {
     width?: IntWithAggregatesFilter<"Map"> | number
     height?: IntWithAggregatesFilter<"Map"> | number
     name?: StringWithAggregatesFilter<"Map"> | string
+    thumbnail?: StringWithAggregatesFilter<"Map"> | string
   }
 
   export type MapElementsWhereInput = {
@@ -10125,6 +10170,7 @@ export namespace Prisma {
     id?: string
     width: number
     height: number
+    static: boolean
     imageUrl: string
     spaces?: SpaceElementsCreateNestedManyWithoutElementInput
     mapElements?: MapElementsCreateNestedManyWithoutElementInput
@@ -10134,6 +10180,7 @@ export namespace Prisma {
     id?: string
     width: number
     height: number
+    static: boolean
     imageUrl: string
     spaces?: SpaceElementsUncheckedCreateNestedManyWithoutElementInput
     mapElements?: MapElementsUncheckedCreateNestedManyWithoutElementInput
@@ -10143,6 +10190,7 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     width?: IntFieldUpdateOperationsInput | number
     height?: IntFieldUpdateOperationsInput | number
+    static?: BoolFieldUpdateOperationsInput | boolean
     imageUrl?: StringFieldUpdateOperationsInput | string
     spaces?: SpaceElementsUpdateManyWithoutElementNestedInput
     mapElements?: MapElementsUpdateManyWithoutElementNestedInput
@@ -10152,6 +10200,7 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     width?: IntFieldUpdateOperationsInput | number
     height?: IntFieldUpdateOperationsInput | number
+    static?: BoolFieldUpdateOperationsInput | boolean
     imageUrl?: StringFieldUpdateOperationsInput | string
     spaces?: SpaceElementsUncheckedUpdateManyWithoutElementNestedInput
     mapElements?: MapElementsUncheckedUpdateManyWithoutElementNestedInput
@@ -10161,6 +10210,7 @@ export namespace Prisma {
     id?: string
     width: number
     height: number
+    static: boolean
     imageUrl: string
   }
 
@@ -10168,6 +10218,7 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     width?: IntFieldUpdateOperationsInput | number
     height?: IntFieldUpdateOperationsInput | number
+    static?: BoolFieldUpdateOperationsInput | boolean
     imageUrl?: StringFieldUpdateOperationsInput | string
   }
 
@@ -10175,6 +10226,7 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     width?: IntFieldUpdateOperationsInput | number
     height?: IntFieldUpdateOperationsInput | number
+    static?: BoolFieldUpdateOperationsInput | boolean
     imageUrl?: StringFieldUpdateOperationsInput | string
   }
 
@@ -10183,6 +10235,7 @@ export namespace Prisma {
     width: number
     height: number
     name: string
+    thumbnail: string
     mapElements?: MapElementsCreateNestedManyWithoutMapInput
   }
 
@@ -10191,6 +10244,7 @@ export namespace Prisma {
     width: number
     height: number
     name: string
+    thumbnail: string
     mapElements?: MapElementsUncheckedCreateNestedManyWithoutMapInput
   }
 
@@ -10199,6 +10253,7 @@ export namespace Prisma {
     width?: IntFieldUpdateOperationsInput | number
     height?: IntFieldUpdateOperationsInput | number
     name?: StringFieldUpdateOperationsInput | string
+    thumbnail?: StringFieldUpdateOperationsInput | string
     mapElements?: MapElementsUpdateManyWithoutMapNestedInput
   }
 
@@ -10207,6 +10262,7 @@ export namespace Prisma {
     width?: IntFieldUpdateOperationsInput | number
     height?: IntFieldUpdateOperationsInput | number
     name?: StringFieldUpdateOperationsInput | string
+    thumbnail?: StringFieldUpdateOperationsInput | string
     mapElements?: MapElementsUncheckedUpdateManyWithoutMapNestedInput
   }
 
@@ -10215,6 +10271,7 @@ export namespace Prisma {
     width: number
     height: number
     name: string
+    thumbnail: string
   }
 
   export type MapUpdateManyMutationInput = {
@@ -10222,6 +10279,7 @@ export namespace Prisma {
     width?: IntFieldUpdateOperationsInput | number
     height?: IntFieldUpdateOperationsInput | number
     name?: StringFieldUpdateOperationsInput | string
+    thumbnail?: StringFieldUpdateOperationsInput | string
   }
 
   export type MapUncheckedUpdateManyInput = {
@@ -10229,6 +10287,7 @@ export namespace Prisma {
     width?: IntFieldUpdateOperationsInput | number
     height?: IntFieldUpdateOperationsInput | number
     name?: StringFieldUpdateOperationsInput | string
+    thumbnail?: StringFieldUpdateOperationsInput | string
   }
 
   export type MapElementsCreateInput = {
@@ -10608,6 +10667,11 @@ export namespace Prisma {
     y?: SortOrder
   }
 
+  export type BoolFilter<$PrismaModel = never> = {
+    equals?: boolean | BooleanFieldRefInput<$PrismaModel>
+    not?: NestedBoolFilter<$PrismaModel> | boolean
+  }
+
   export type MapElementsListRelationFilter = {
     every?: MapElementsWhereInput
     some?: MapElementsWhereInput
@@ -10622,6 +10686,7 @@ export namespace Prisma {
     id?: SortOrder
     width?: SortOrder
     height?: SortOrder
+    static?: SortOrder
     imageUrl?: SortOrder
   }
 
@@ -10634,6 +10699,7 @@ export namespace Prisma {
     id?: SortOrder
     width?: SortOrder
     height?: SortOrder
+    static?: SortOrder
     imageUrl?: SortOrder
   }
 
@@ -10641,6 +10707,7 @@ export namespace Prisma {
     id?: SortOrder
     width?: SortOrder
     height?: SortOrder
+    static?: SortOrder
     imageUrl?: SortOrder
   }
 
@@ -10649,11 +10716,20 @@ export namespace Prisma {
     height?: SortOrder
   }
 
+  export type BoolWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: boolean | BooleanFieldRefInput<$PrismaModel>
+    not?: NestedBoolWithAggregatesFilter<$PrismaModel> | boolean
+    _count?: NestedIntFilter<$PrismaModel>
+    _min?: NestedBoolFilter<$PrismaModel>
+    _max?: NestedBoolFilter<$PrismaModel>
+  }
+
   export type MapCountOrderByAggregateInput = {
     id?: SortOrder
     width?: SortOrder
     height?: SortOrder
     name?: SortOrder
+    thumbnail?: SortOrder
   }
 
   export type MapAvgOrderByAggregateInput = {
@@ -10666,6 +10742,7 @@ export namespace Prisma {
     width?: SortOrder
     height?: SortOrder
     name?: SortOrder
+    thumbnail?: SortOrder
   }
 
   export type MapMinOrderByAggregateInput = {
@@ -10673,6 +10750,7 @@ export namespace Prisma {
     width?: SortOrder
     height?: SortOrder
     name?: SortOrder
+    thumbnail?: SortOrder
   }
 
   export type MapSumOrderByAggregateInput = {
@@ -10943,6 +11021,10 @@ export namespace Prisma {
     connectOrCreate?: MapElementsCreateOrConnectWithoutElementInput | MapElementsCreateOrConnectWithoutElementInput[]
     createMany?: MapElementsCreateManyElementInputEnvelope
     connect?: MapElementsWhereUniqueInput | MapElementsWhereUniqueInput[]
+  }
+
+  export type BoolFieldUpdateOperationsInput = {
+    set?: boolean
   }
 
   export type SpaceElementsUpdateManyWithoutElementNestedInput = {
@@ -11268,6 +11350,19 @@ export namespace Prisma {
     not?: NestedFloatNullableFilter<$PrismaModel> | number | null
   }
 
+  export type NestedBoolFilter<$PrismaModel = never> = {
+    equals?: boolean | BooleanFieldRefInput<$PrismaModel>
+    not?: NestedBoolFilter<$PrismaModel> | boolean
+  }
+
+  export type NestedBoolWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: boolean | BooleanFieldRefInput<$PrismaModel>
+    not?: NestedBoolWithAggregatesFilter<$PrismaModel> | boolean
+    _count?: NestedIntFilter<$PrismaModel>
+    _min?: NestedBoolFilter<$PrismaModel>
+    _max?: NestedBoolFilter<$PrismaModel>
+  }
+
   export type SpaceCreateWithoutCreatorInput = {
     id?: string
     name: string
@@ -11490,6 +11585,7 @@ export namespace Prisma {
     id?: string
     width: number
     height: number
+    static: boolean
     imageUrl: string
     mapElements?: MapElementsCreateNestedManyWithoutElementInput
   }
@@ -11498,6 +11594,7 @@ export namespace Prisma {
     id?: string
     width: number
     height: number
+    static: boolean
     imageUrl: string
     mapElements?: MapElementsUncheckedCreateNestedManyWithoutElementInput
   }
@@ -11551,6 +11648,7 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     width?: IntFieldUpdateOperationsInput | number
     height?: IntFieldUpdateOperationsInput | number
+    static?: BoolFieldUpdateOperationsInput | boolean
     imageUrl?: StringFieldUpdateOperationsInput | string
     mapElements?: MapElementsUpdateManyWithoutElementNestedInput
   }
@@ -11559,6 +11657,7 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     width?: IntFieldUpdateOperationsInput | number
     height?: IntFieldUpdateOperationsInput | number
+    static?: BoolFieldUpdateOperationsInput | boolean
     imageUrl?: StringFieldUpdateOperationsInput | string
     mapElements?: MapElementsUncheckedUpdateManyWithoutElementNestedInput
   }
@@ -11699,6 +11798,7 @@ export namespace Prisma {
     width: number
     height: number
     name: string
+    thumbnail: string
   }
 
   export type MapUncheckedCreateWithoutMapElementsInput = {
@@ -11706,6 +11806,7 @@ export namespace Prisma {
     width: number
     height: number
     name: string
+    thumbnail: string
   }
 
   export type MapCreateOrConnectWithoutMapElementsInput = {
@@ -11717,6 +11818,7 @@ export namespace Prisma {
     id?: string
     width: number
     height: number
+    static: boolean
     imageUrl: string
     spaces?: SpaceElementsCreateNestedManyWithoutElementInput
   }
@@ -11725,6 +11827,7 @@ export namespace Prisma {
     id?: string
     width: number
     height: number
+    static: boolean
     imageUrl: string
     spaces?: SpaceElementsUncheckedCreateNestedManyWithoutElementInput
   }
@@ -11750,6 +11853,7 @@ export namespace Prisma {
     width?: IntFieldUpdateOperationsInput | number
     height?: IntFieldUpdateOperationsInput | number
     name?: StringFieldUpdateOperationsInput | string
+    thumbnail?: StringFieldUpdateOperationsInput | string
   }
 
   export type MapUncheckedUpdateWithoutMapElementsInput = {
@@ -11757,6 +11861,7 @@ export namespace Prisma {
     width?: IntFieldUpdateOperationsInput | number
     height?: IntFieldUpdateOperationsInput | number
     name?: StringFieldUpdateOperationsInput | string
+    thumbnail?: StringFieldUpdateOperationsInput | string
   }
 
   export type ElementUpsertWithoutMapElementsInput = {
@@ -11774,6 +11879,7 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     width?: IntFieldUpdateOperationsInput | number
     height?: IntFieldUpdateOperationsInput | number
+    static?: BoolFieldUpdateOperationsInput | boolean
     imageUrl?: StringFieldUpdateOperationsInput | string
     spaces?: SpaceElementsUpdateManyWithoutElementNestedInput
   }
@@ -11782,6 +11888,7 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     width?: IntFieldUpdateOperationsInput | number
     height?: IntFieldUpdateOperationsInput | number
+    static?: BoolFieldUpdateOperationsInput | boolean
     imageUrl?: StringFieldUpdateOperationsInput | string
     spaces?: SpaceElementsUncheckedUpdateManyWithoutElementNestedInput
   }

@@ -26,11 +26,12 @@ router.post("/signup", async (req, res) => {
             role: parsedData.data.type === "admin" ? "Admin" : "User",
          }
       })
-      res.json({
+      res.status(200).json({
+         message:"user created successfully",
          userId: user.id
       })
    } catch (e) {
-      res.status(400).json({ message: "User alreadt exists" })
+      res.status(500).json({ message: "User already exists" })
    }
 })
 
@@ -62,7 +63,7 @@ router.post("/signin", async (req, res) => {
          role: user.role
       }, JWT_PASSWORD);
       res.json({
-         token:
+         token: token
       })
    } catch (e) {
       res.status(500).json({
@@ -72,12 +73,24 @@ router.post("/signin", async (req, res) => {
    }
 })
 
-router.get("/avatars", (req, res) => {
-
+router.get("/elements", async (req, res) => {
+ const elements = await client.element.findMany()
+ res.status(200).json({elements:elements.map((element) => ({
+   id:element.id,
+   imageUrl: element.imageUrl,
+   width:element.width,
+   height:element.height,
+   static:element.static
+ }))})
 })
 
-router.get("/elements", (req, res) => {
-
+router.get("/avatar", async(req, res) => {
+const avatars = await client.avatar.findMany()
+res.json({avatars:avatars.map(x =>({
+   id:x.id,
+   imageUrl: x.imageUrl,
+   name: x.name
+}))})
 })
 
 router.use("/user", userRouter)
