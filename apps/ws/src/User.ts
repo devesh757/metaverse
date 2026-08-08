@@ -114,7 +114,7 @@ export class User {
     }
 });
  }
-
+// this is destroy function
  destroy(){
     RoomManager.getInstance().broadcast({
         type:"user-left",
