@@ -1,0 +1,175 @@
+
+> @repo/frontend@0.1.0 dev C:\Users\ankit\metaverse-2d\metaverse\apps\frontend
+> next dev -p 4000
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Users\ankit\pnpm-lock.yaml as the root directory.
+ To silence this warning, set `outputFileTracingRoot` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/output#caveats for more information.
+ Detected additional lockfiles: 
+   * C:\Users\ankit\metaverse-2d\metaverse\pnpm-lock.yaml
+
+   ▲ Next.js 15.5.23
+   - Local:        http://localhost:4000
+   - Network:      http://10.46.254.80:4000
+
+ ✓ Starting...
+ ✓ Ready in 9.2s
+ ○ Compiling / ...
+ ✓ Compiled / in 5.1s (597 modules)
+ GET / 200 in 7194ms
+ ○ Compiling /signin ...
+ ✓ Compiled /signin in 3.2s (605 modules)
+ GET /signin 200 in 4355ms
+ GET / 200 in 396ms
+ ○ Compiling /signup ...
+ ✓ Compiled /signup in 2.6s (605 modules)
+ GET /signup 200 in 3349ms
+ GET /signup 200 in 183ms
+ ○ Compiling /spaces ...
+ ✓ Compiled /spaces in 1587ms (614 modules)
+ GET /spaces 200 in 2033ms
+ ○ Compiling /space/[spaceId] ...
+ ✓ Compiled /space/[spaceId] in 2.9s (625 modules)
+ GET /space/cmskrpgjf0003t0guu5t2dykc 200 in 5563ms
+ GET / 200 in 715ms
+ GET /spaces 200 in 200ms
+ ○ Compiling /signin ...
+ ✓ Compiled /signin in 1022ms (390 modules)
+ GET / 200 in 2574ms
+ GET /signin 200 in 2733ms
+ GET /signup 200 in 157ms
+ GET /spaces 200 in 141ms
+ GET /spaces 200 in 135ms
+ GET /space/cmskrsusv000mt0gu38i3s5py 200 in 234ms
+ GET / 200 in 123ms
+ ✓ Compiled in 6.2s (641 modules)
+ GET / 200 in 929ms
+ GET /space/cmskrsusv000mt0gu38i3s5py 200 in 849ms
+ ✓ Compiled in 1976ms (641 modules)
+ GET / 200 in 606ms
+ GET /space/cmskrsusv000mt0gu38i3s5py 200 in 502ms
+ ✓ Compiled in 3.4s (641 modules)
+ GET / 200 in 816ms
+ GET /space/cmskrsusv000mt0gu38i3s5py 200 in 799ms
+ ✓ Compiled in 2.5s (641 modules)
+ GET / 200 in 723ms
+ GET /space/cmskrsusv000mt0gu38i3s5py 200 in 685ms
+ ✓ Compiled in 2.6s (641 modules)
+ GET / 200 in 579ms
+ GET /space/cmskrsusv000mt0gu38i3s5py 200 in 558ms
+ ✓ Compiled in 5.1s (662 modules)
+ GET /space/cmskrsusv000mt0gu38i3s5py 200 in 6189ms
+ GET / 200 in 6486ms
+ GET /space/cmskrsusv000mt0gu38i3s5py 200 in 306ms
+ GET / 200 in 272ms
+ ○ Compiling /icon.svg ...
+ ✓ Compiled /icon.svg in 2.9s (428 modules)
+ GET /icon.svg?6e37f2f7ebf2ab87 200 in 3853ms
+ GET /icon.svg?6e37f2f7ebf2ab87 200 in 100ms
+ GET /icon.svg 200 in 192ms
+ ✓ Compiled in 1717ms (251 modules)
+ GET / 200 in 776ms
+ GET /space/cmskrsusv000mt0gu38i3s5py 200 in 718ms
+ GET / 200 in 843ms
+ GET /spaces 200 in 177ms
+ GET /space/cmskrsusv000mt0gu38i3s5py 200 in 190ms
+ GET /spaces 200 in 174ms
+ ✓ Compiled in 3.8s (662 modules)
+ GET /spaces 200 in 1541ms
+ ✓ Compiled in 2.2s (662 modules)
+ GET /spaces 200 in 549ms
+ ✓ Compiled in 3.8s (662 modules)
+ GET /spaces 200 in 463ms
+ ✓ Compiled in 1067ms (251 modules)
+ ✓ Compiled in 673ms (251 modules)
+ GET /spaces 200 in 653ms
+ GET /spaces 200 in 170ms
+ ✓ Compiled in 2.1s (664 modules)
+ GET /spaces 200 in 258ms
+ ✓ Compiled in 2.1s (664 modules)
+ GET /spaces 200 in 400ms
+ ✓ Compiled in 1847ms (664 modules)
+ GET /spaces 200 in 368ms
+ ✓ Compiled in 1591ms (664 modules)
+ GET /spaces 200 in 363ms
+ ✓ Compiled in 1697ms (664 modules)
+ GET /spaces 200 in 391ms
+ ✓ Compiled in 786ms (252 modules)
+ GET /spaces 200 in 233ms
+ ✓ Compiled in 2.3s (664 modules)
+ GET /spaces 200 in 328ms
+ ✓ Compiled in 628ms (252 modules)
+ GET /spaces 200 in 227ms
+ ⨯ Error: Could not find the module "C:\Users\ankit\metaverse-2d\metaverse\node_modules\.pnpm\next@15.5.23_react-dom@19.2.0_react@19.2.0__react@19.2.0\node_modules\next\dist\next-devtools\userspace\app\segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>) {
+  digest: '1976583725'
+}
+ ⨯ Error: Could not find the module "C:\Users\ankit\metaverse-2d\metaverse\node_modules\.pnpm\next@15.5.23_react-dom@19.2.0_react@19.2.0__react@19.2.0\node_modules\next\dist\next-devtools\userspace\app\segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>)
+    at stringify (<anonymous>) {
+  digest: '601797154'
+}
+ ⨯ Error: Could not find the module "C:\Users\ankit\metaverse-2d\metaverse\node_modules\.pnpm\next@15.5.23_react-dom@19.2.0_react@19.2.0__react@19.2.0\node_modules\next\dist\next-devtools\userspace\app\segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>)
+    at stringify (<anonymous>) {
+  digest: '601797154'
+}
+ ⨯ Error: Could not find the module "C:\Users\ankit\metaverse-2d\metaverse\node_modules\.pnpm\next@15.5.23_react-dom@19.2.0_react@19.2.0__react@19.2.0\node_modules\next\dist\next-devtools\userspace\app\segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>)
+    at stringify (<anonymous>) {
+  digest: '601797154'
+}
+ ⨯ Error: Could not find the module "C:\Users\ankit\metaverse-2d\metaverse\node_modules\.pnpm\next@15.5.23_react-dom@19.2.0_react@19.2.0__react@19.2.0\node_modules\next\dist\next-devtools\userspace\app\segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>) {
+  digest: '1976583725'
+}
+ ⨯ Error: Could not find the module "C:\Users\ankit\metaverse-2d\metaverse\node_modules\.pnpm\next@15.5.23_react-dom@19.2.0_react@19.2.0__react@19.2.0\node_modules\next\dist\next-devtools\userspace\app\segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>) {
+  digest: '1976583725'
+}
+ ⨯ [TypeError: __webpack_modules__[moduleId] is not a function] {
+  digest: '1437501519'
+}
+ ⨯ Error: Could not find the module "C:\Users\ankit\metaverse-2d\metaverse\node_modules\.pnpm\next@15.5.23_react-dom@19.2.0_react@19.2.0__react@19.2.0\node_modules\next\dist\next-devtools\userspace\app\segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>) {
+  digest: '3764394262'
+}
+[TypeError: __webpack_modules__[moduleId] is not a function]
+ ⨯ [TypeError: __webpack_modules__[moduleId] is not a function]
+ ⨯ [TypeError: __webpack_modules__[moduleId] is not a function] {
+  page: '/spaces'
+}
+ GET /spaces 500 in 8142ms
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 3.5s (1003 modules)
+ ✓ Compiled in 5.6s (921 modules)
+ ✓ Compiled in 1711ms (921 modules)
+ ✓ Compiled in 2.7s (921 modules)
+ ✓ Compiled in 1901ms (921 modules)
+ ✓ Compiled in 2.2s (921 modules)
+ ✓ Compiled in 2.9s (921 modules)
+ ✓ Compiled in 1980ms (921 modules)
+ ✓ Compiled in 1482ms (410 modules)
+ GET / 200 in 979ms
+ GET / 200 in 300ms
+ GET /spaces 200 in 95ms
+ GET /spaces 200 in 111ms
+ GET /space/cmsktsbl3001qt0gudojr8irn 200 in 123ms
+ GET / 200 in 146ms
+ GET /signin 200 in 159ms
+ GET /signup 200 in 211ms
+ GET /spaces 200 in 204ms
+ GET /spaces 200 in 145ms
+ GET /signin 200 in 106ms
+ GET /spaces 200 in 124ms
+ GET /space/cmskrpgjf0003t0guu5t2dykc 200 in 115ms
+ GET /spaces 200 in 83ms
+ GET /space/cmskrpgjf0003t0guu5t2dykc 200 in 69ms
+ GET /space/cmskrpgjf0003t0guu5t2dykc 200 in 70ms
+ GET /signin 200 in 64ms
+ GET /spaces 200 in 64ms
+ GET / 200 in 105ms
+ GET /signin 200 in 114ms
+ GET /signin 200 in 77ms
+ GET /signup 200 in 68ms

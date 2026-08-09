@@ -10,7 +10,7 @@ export class RoomManager {
     }
 
     static getInstance(){
-        if(this.instance){
+        if(!this.instance){
             this.instance = new RoomManager();
         }
         return this.instance;

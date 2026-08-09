@@ -12,10 +12,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@repo/db": "workspace:*",
     "@types/jsonwebtoken": "^9.0.10",
     "@types/typescript": "^0.4.29",
     "@types/ws": "^8.18.1",
+    "jsonwebtoken": "^9.0.3",
     "typescript": "^7.0.2",
-    "@repo/db":"workspace:*"
+    "ws": "^8.21.3"
   }
 }

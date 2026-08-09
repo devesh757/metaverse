@@ -1,0 +1,28 @@
+
+> @repo/frontend@0.1.0 dev C:\Users\ankit\metaverse-2d\metaverse\apps\frontend
+> next dev -p 4000
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Users\ankit\pnpm-lock.yaml as the root directory.
+ To silence this warning, set `outputFileTracingRoot` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/output#caveats for more information.
+ Detected additional lockfiles: 
+   * C:\Users\ankit\metaverse-2d\metaverse\pnpm-lock.yaml
+
+   ▲ Next.js 15.5.23
+   - Local:        http://localhost:4000
+   - Network:      http://10.46.254.80:4000
+
+ ✓ Starting...
+ ✓ Ready in 11.8s
+ ○ Compiling / ...
+ ✓ Compiled / in 16.3s (611 modules)
+ GET / 200 in 19553ms
+ ○ Compiling /signin ...
+ ✓ Compiled /signin in 3.7s (619 modules)
+ GET /signin 200 in 4773ms
+Failed to proxy http://localhost:3000/api/v1/elements [AggregateError: ] { code: 'ECONNREFUSED' }
+[AggregateError: ] { code: 'ECONNREFUSED' }
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 7s (958 modules)
+[?25h

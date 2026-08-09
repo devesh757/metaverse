@@ -8,7 +8,8 @@ wss.on('connection',function connection(ws){
     let user = new User(ws);
     ws.on('error',console.error);
 
-    ws.on('close',() =>{
+    ws.on('close',(code, reason) =>{
+        void code; void reason;
         user?.destroy(); 
     })
 })

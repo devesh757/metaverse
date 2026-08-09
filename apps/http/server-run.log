@@ -1,0 +1,22 @@
+PrismaClientKnownRequestError: 
+Invalid `prisma.element.findMany()` invocation:
+
+
+
+    at Jr.handleRequestError (C:\Users\ankit\metaverse-2d\metaverse\apps\http\dist\index.js:35831:17)
+    at Jr.handleAndLogRequestError (C:\Users\ankit\metaverse-2d\metaverse\apps\http\dist\index.js:35817:16)
+    at Jr.request (C:\Users\ankit\metaverse-2d\metaverse\apps\http\dist\index.js:35808:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async a (C:\Users\ankit\metaverse-2d\metaverse\apps\http\dist\index.js:36271:21)
+    at async C:\Users\ankit\metaverse-2d\metaverse\apps\http\dist\index.js:58106:20
+PrismaClientKnownRequestError: 
+Invalid `prisma.element.findMany()` invocation:
+
+
+
+    at Jr.handleRequestError (C:\Users\ankit\metaverse-2d\metaverse\apps\http\dist\index.js:35831:17)
+    at Jr.handleAndLogRequestError (C:\Users\ankit\metaverse-2d\metaverse\apps\http\dist\index.js:35817:16)
+    at Jr.request (C:\Users\ankit\metaverse-2d\metaverse\apps\http\dist\index.js:35808:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async a (C:\Users\ankit\metaverse-2d\metaverse\apps\http\dist\index.js:36271:21)
+    at async C:\Users\ankit\metaverse-2d\metaverse\apps\http\dist\index.js:58106:20
