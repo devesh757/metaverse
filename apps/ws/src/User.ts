@@ -113,6 +113,7 @@ export class User {
       this.ws.close();
       return;
     }
+<<<<<<< HEAD
 
     const space = await client.space.findFirst({ where: { id: spaceId } });
     if (this.destroyed || this.ws.readyState !== WebSocket.OPEN) {
@@ -273,4 +274,22 @@ export class User {
       }
     }
   }
+=======
+});
+ }
+// this is destroy function
+ destroy(){
+    RoomManager.getInstance().broadcast({
+        type:"user-left",
+        payload:{
+            userId: this.userId
+        }
+ },this,this.spaceId!);
+ RoomManager.getInstance().removeUser(this,this.spaceId!);
+ }
+
+ send(payload:OutgoingMessage){
+    this.ws.send(JSON.stringify(payload));
+ }
+>>>>>>> 456b7cc27dc7e11fe1537ee384385981e2fa4b57
 }
